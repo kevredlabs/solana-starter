@@ -1,0 +1,30 @@
+# Rust artifacts
+target/
+Cargo.lock
+
+# Anchor build artifacts
+**/target/
+**/.anchor/
+
+# Localnet ledger files
+.localnet-ledger/
+ledger/
+
+# Node.js dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# TypeScript build artifacts
+dist/
+
+# Environment files
+.env
+
+# IDE/editor files
+.vscode/
+.idea/
+.DS_Store
+
+# Solana validator logs
+validator.log
