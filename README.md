@@ -10,14 +10,11 @@ It provides a complete development environment with:
 - Professional Makefile for development and deployment
 - GitHub templates for issues and pull requests
 
-[![Use this template](https://img.shields.io/badge/Use%20this%20template-brightgreen.svg)](https://github.com/kevred/solana-starter/generate)
-
 ---
 
 ## 📂 Project Structure
 
-```
-programs/
+```programs/
   myproject/          # Rust smart contract
 tests/
   myproject.ts        # Anchor TypeScript tests
@@ -42,7 +39,6 @@ README.md             # This file
 Click the "Use this template" button above to create a new repository based on this template.
 
 ### 2. Install Requirements
-
 - Rust
 - Solana CLI
 - Anchor CLI
@@ -178,3 +174,5 @@ Feel free to use this template for your Solana/Anchor projects.
 ---
 
 # 🚀 Happy Building on Solana!
+
+
