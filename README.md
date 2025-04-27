@@ -61,6 +61,27 @@ solana-keygen new --outfile Account1-keypair.json
 solana-keygen new --outfile Account2-keypair.json
 ```
 
+### 5. Initialize Anchor Project
+
+First, you need to initialize a new Anchor project:
+
+```bash
+anchor init myproject
+cd myproject
+```
+
+This command will:
+- Create a new Anchor project structure
+- Set up the necessary configuration files (Anchor.toml, etc.)
+- Initialize a new Rust program
+- Create a basic test file
+
+After initialization, you can copy over the additional files from this template:
+- The Makefile
+- The genesis.json configuration
+- The .github templates
+- Any other custom configurations
+
 ---
 
 ## 📦 Development Commands
