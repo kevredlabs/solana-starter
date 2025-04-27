@@ -63,10 +63,17 @@ solana-keygen new --outfile Account2-keypair.json
 
 ### 5. Initialize Anchor Project
 
-Initialize Anchor with a valid program name (this can be different from your directory name):
+Initialize Anchor with a valid program name:
 
 ```bash
-anchor init --name <your_program_name> .
+anchor init <your_program_name>
+```
+
+This will create a new directory with your program name. If you want to keep everything in the current directory, you can move the files:
+
+```bash
+mv <your_program_name>/* .
+rmdir <your_program_name>
 ```
 
 This command will:
