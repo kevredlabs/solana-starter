@@ -10,7 +10,7 @@ It provides a complete development environment with:
 - Professional Makefile for development and deployment
 - GitHub templates for issues and pull requests
 
-[![Use this template](https://img.shields.io/badge/Use%20this%20template-brightgreen.svg)](https://github.com/yourusername/solana-starter/generate)
+[![Use this template](https://img.shields.io/badge/Use%20this%20template-brightgreen.svg)](https://github.com/kevred/solana-starter/generate)
 
 ---
 
