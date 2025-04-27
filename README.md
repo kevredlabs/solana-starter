@@ -63,10 +63,10 @@ solana-keygen new --outfile Account2-keypair.json
 
 ### 5. Initialize Anchor Project
 
-Initialize Anchor directly in the current directory:
+Initialize Anchor with a valid program name (this can be different from your directory name):
 
 ```bash
-anchor init .
+anchor init --name <your_program_name> .
 ```
 
 This command will:
