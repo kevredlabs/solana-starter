@@ -28,8 +28,10 @@ Click the "Use this template" button above to create a new repository based on t
 git clone <your-new-repo-url>
 cd <your-new-repo-name>
 anchor init <your_program_name>
-cp ../Anchor.toml ../Cargo.toml ../package.json ../tsconfig.json .
-cp -r ../programs ../tests ../migrations .
+cd <your_program_name>
+cp -r programs tests migrations ..
+cp Anchor.toml Cargo.toml package.json tsconfig.json ..
+cd ..
 yarn install
 cargo install cargo-watch
 yarn add -D dotenv-cli
