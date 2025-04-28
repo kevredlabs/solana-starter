@@ -10,28 +10,6 @@ It provides a complete development environment with:
 - Professional Makefile for development and deployment
 - GitHub templates for issues and pull requests
 
----
-
-## 📂 Project Structure
-
-```programs/
-  myproject/          # Rust smart contract
-tests/
-  myproject.ts        # Anchor TypeScript tests
-migrations/
-  deploy.ts           # Custom deploy scripts (optional)
-Makefile              # Project automation
-Anchor.toml           # Anchor configuration
-genesis.json          # Localnet custom accounts
-Account1-keypair.json # Pre-generated account keypair
-Account2-keypair.json
-package.json          # TypeScript dependencies
-tsconfig.json
-README.md             # This file
-```
-
----
-
 ## ⚡ Quickstart
 
 ### 1. Create a New Project
@@ -49,6 +27,9 @@ Click the "Use this template" button above to create a new repository based on t
 ```bash
 git clone <your-new-repo-url>
 cd <your-new-repo-name>
+anchor init <your_program_name>
+cp ../Anchor.toml ../Cargo.toml ../package.json ../tsconfig.json .
+cp -r ../programs ../tests ../migrations .
 yarn install
 cargo install cargo-watch
 yarn add -D dotenv-cli
@@ -60,33 +41,6 @@ yarn add -D dotenv-cli
 solana-keygen new --outfile Account1-keypair.json
 solana-keygen new --outfile Account2-keypair.json
 ```
-
-### 5. Initialize Anchor Project
-
-Initialize Anchor with a valid program name:
-
-```bash
-anchor init <your_program_name>
-```
-
-This will create a new directory with your program name. If you want to keep everything in the current directory, you can move the files:
-
-```bash
-mv <your_program_name>/* .
-rmdir <your_program_name>
-```
-
-This command will:
-- Create the Anchor project structure in the current directory
-- Set up the necessary configuration files (Anchor.toml, etc.)
-- Initialize a new Rust program
-- Create a basic test file
-
-The template files (Makefile, genesis.json, etc.) will remain in place, and Anchor will add its own files alongside them.
-
-⚠️ **Note**: The project will be named after your current directory. If you want to change the project name:
-1. Rename your directory first: `mv solana-starter my-new-project-name`
-2. Then run `anchor init .` in the new directory
 
 ---
 
@@ -201,5 +155,3 @@ Feel free to use this template for your Solana/Anchor projects.
 ---
 
 # 🚀 Happy Building on Solana!
-
-
